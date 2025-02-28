@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div style="width:800px; margin:auto; font-size: 25px;">
+    <h1>GIT AND GIT HUB</h1>
+    <img src="gitimg.jpg" width="780px">
+    <p>GitHub allows developers to create, store, manage, and share their code. Git is version control system and GitHub is a cloud-based platform where you can store, share, and work together with others to write code.
+    </p>
+    <h1>Steps to download and install Git </h1>
+    <p><ol type="a">
+        <li>Download Git from <a href="https://git-scm.com/downloads">Download git</a></li>
+        <li>Select the Type of Operating System and Download</li>
+        <li>Restart or Reboot the PC</li>
+        <li>To check if its installed go to VS code and open terminal from top left options.Type 'git --version' on terminal and it will show the latest terminal installed</li>
+    </ol></p>
+    <h1>To use git in VS </h1>
+    <ol>
+        <li>In Terminal type command 'git init'.It will initialize in specific folder and keep track of everything in the project</li>
+        <li>Now 'U' will appear after all the files in that specific folder representing untracked file i.e Git is not able to track their location.yoc can check the same by typing 'git status' it will give list of files that are untracked</li>
+        <li>To track file write command 'git add filename'
+            and to track all files type 'git add.'
+            and the commit by typing 'git commit -m 'your msg'
+        </li>
+        <li>If you are Committing for the first time then you will get following error:
+            *** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+So you have to run these commands:
+git config --global user.email "you@example.com"
+git config --global user.name "Your Name"
+
+and configure it and then again add and commit.
+commit is used to create a log of the changes made so far and keeps track of the changes made so far.
+
+        </li>
+        <li>To see number of times committed type commands 'git log' </li>
+</ol>
+<H1>Suppose you made some mistake in last commit and you want to delete it and go back to last second commit then</H1>
+<ol>
+    <li>Type 'git log' command and see the log
+        select the code of the commit you want to go back to
+        eg:commit athe31678ba550gh109eabfd0da4588f3c6
+        now copy the code 'athe31678ba550gh109eabfd0da4588f3c6'
+    </li>
+    <li>type command and paste the code : 'git reset --hard athe31678ba550gh109eabfd0da4588f3c6'
+        hard :when you want to completely remove last version
+        type command and paste the code :'git reset --soft athe31678ba550gh109eabfd0da4588f3c6'
+        soft :When you want to go to required version bt doesnt want to remove the version in which mistake was made.
+    </li>
+</ol>
+<h1>Git Hub</h1>
+<ul>
+    <li>Create an account on <a href="https://github.com/"Git hub></a></li>
+    <li>Click on new button on top left corner</li>
+    <li>Give name to your repository scroll down and create repository</li>
+    <li>You will get list of commands to be used </li>
+    <li> create a new repository on the command line
+        echo "# VCS" >> README.md
+        git init
+        git add README.md
+        git commit -m "first commit"
+        git branch -M main
+        git remote add origin https://github.com/ABC/VCS.git
+        git push -u origin main</li>
+    <li> push an existing repository from the command line: 
+        git remote add origin https://github.com/ABC/VCS.git
+        git branch -M main
+        git push -u origin main
+    </li>
+</ul>
+</div>
+</body>
+</html>

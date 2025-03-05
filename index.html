@@ -12,73 +12,104 @@
     <p>GitHub allows developers to create, store, manage, and share their code. Git is version control system and GitHub is a cloud-based platform where you can store, share, and work together with others to write code.
     </p>
     <h1>Steps to download and install Git </h1>
-    <p><ol type="a">
+    <p><ol type="1">
         <li>Download Git from <a href="https://git-scm.com/downloads">Download git</a></li>
         <li>Select the Type of Operating System and Download</li>
         <li>Restart or Reboot the PC</li>
-        <li>To check if its installed go to VS code and open terminal from top left options.Type 'git --version' on terminal and it will show the latest terminal installed</li>
+        <li>To check if its installed go to VS code and open terminal from top left options.Type :<b>git --version</b>on terminal and it will show the latest terminal installed</li>
     </ol></p>
     <h1>To use git in VS </h1>
     <ol>
-        <li>In Terminal type command 'git init'.It will initialize in specific folder and keep track of everything in the project</li>
+        <li>In Terminal type command :<b>git init</b>.It will initialize in specific folder and keep track of everything in the project</li>
         <li>Now 'U' will appear after all the files in that specific folder representing untracked file i.e Git is not able to track their location.yoc can check the same by typing 'git status' it will give list of files that are untracked</li>
-        <li>To track file write command 'git add filename'
-            and to track all files type 'git add.'
-            and the commit by typing 'git commit -m 'your msg'
+        <li>To track file write command:<b>git add filename</b><br>
+            and to track all files type:<b>git add</b><br>
+            and the commit by typing :<b>git commit -m 'your msg'</b>
         </li>
         <li>If you are Committing for the first time then you will get following error:
-            *** Please tell me who you are.
+            *** Please tell me who you are.<br>
 
 Run
 
-  git config --global user.email "you@example.com"
-  git config --global user.name "Your Name"
+<b>git config --global user.email "you@example.com"</b><br>
+<b> git config --global user.name "Your Name"</b><br>
 
-to set your account's default identity.
-Omit --global to set the identity only in this repository.
-So you have to run these commands:
-git config --global user.email "you@example.com"
-git config --global user.name "Your Name"
+to set your account's default identity.<br>
+Omit --global to set the identity only in this repository.<br>
+So you have to run these commands:<br>
+<b>git config --global user.email "you@example.com"</b><br>
+<b>git config --global user.name "Your Name"</b><br>
 
-and configure it and then again add and commit.
-commit is used to create a log of the changes made so far and keeps track of the changes made so far.
+and configure it and then again add and commit.<br>
+commit is used to create a log of the changes made so far and keeps track of the changes made so far.<br>
 
         </li>
-        <li>To see number of times committed type commands 'git log' </li>
+        <li>To see number of times committed type commands :<b>git log</b> </li>
 </ol>
 <H1>Suppose you made some mistake in last commit and you want to delete it and go back to last second commit then</H1>
 <ol>
-    <li>Type 'git log' command and see the log
-        select the code of the commit you want to go back to
-        eg:commit athe31678ba550gh109eabfd0da4588f3c6
+    <li>Type <b>git log</b> command and see the log<br>
+        select the code of the commit you want to go back to<br>
+        eg:commit athe31678ba550gh109eabfd0da4588f3c6<br>
         now copy the code 'athe31678ba550gh109eabfd0da4588f3c6'
     </li>
-    <li>type command and paste the code : 'git reset --hard athe31678ba550gh109eabfd0da4588f3c6'
-        hard :when you want to completely remove last version
-        type command and paste the code :'git reset --soft athe31678ba550gh109eabfd0da4588f3c6'
-        soft :When you want to go to required version bt doesnt want to remove the version in which mistake was made.
+    <li>
+        <ul><li>type command and paste the code : <b>git reset --hard athe31678ba550gh109eabfd0da4588f3c6</b></li>
+        <li>hard :when you want to completely remove last version</li>
+       <li>type command and paste the code :<b>git reset --soft athe31678ba550gh109eabfd0da4588f3c6</b></li> 
+       <li> soft :When you want to go to required version bt doesnt want to remove the version in which mistake was made.</li>
+    </ul>
     </li>
 </ol>
 <h1>Git Hub</h1>
-<ul>
+<ol>
     <li>Create an account on <a href="https://github.com/"Git hub></a></li>
     <li>Click on new button on top left corner</li>
     <li>Give name to your repository scroll down and create repository</li>
-    <li>You will get list of commands to be used </li>
-    <li> create a new repository on the command line
-        echo "# VCS" >> README.md
-        git init
-        git add README.md
-        git commit -m "first commit"
-        git branch -M main
-        git remote add origin https://github.com/ABC/VCS.git
-        git push -u origin main</li>
-    <li> push an existing repository from the command line: 
-        git remote add origin https://github.com/ABC/VCS.git
-        git branch -M main
-        git push -u origin main
-    </li>
+    <li>You will get list of commands to be used </li></ol>
+    <h2> Create a new repository on the command line</h2>
+        <ul><li>echo "# VCS" >> README.md</li>
+            <li>git init</li>
+        <li> git add README.md</li>
+        <li> git commit -m "first commit"</li>
+        <li>git branch -M main</li>
+        <li>git remote add origin https://github.com/ABC/VCS.git</li>
+      <li> git push -u origin main</li>
+    </ul>
+    
+   <h2>Push an existing repository from the command line: </h2>
+   <ul><li>git remote add origin https://github.com/ABC/VCS.git</li>
+        <li>git branch -M main</li>
+        <li>git push -u origin main</li>
+     <li>Now whenever you create a file you just have to type :git add .,the type :git commit -m 'msg' , then type :git push and file will be added to the same repository</li>
 </ul>
+    <h1>If you want to download files of someones's from git hub to your desktop</h1>
+    <li>Go to repository,click on code and from drop down select link in HTTPS </li>
+    <li>Open Cmd in your terminal and type :<b>git clone link</b>(which you have copied)</li>
+    <li>now every time new files added or any changes made you just have to type :<b>git pull</b> and data will be downloaded into your files</li>
+</ul>
+<h1>Hosting </h1>
+<ul>
+    <li>Go to repository you want to host</li>
+    <li>Go to settings on the left and click on pages(note:The first file name should be index.html)</li>
+    <li>Then click on branch option and select main from first drop down and then click on save</li>
+<li>Its will take few mins and then hosted website link will appear in box: <b>your site is live at:https.....</b></li>
+<li>now anyone with this link can see your webpage</li>
+</ul>
+<h1>Branching:
+    <br>Its is used when you want to make some changes in file and test it bt you dont want to manipulate contents of the previous content written on that file
+</h1>
+<ul>
+    <li>After Typing the code ,Write command:git branch</li>
+    <li>Then write command:<b>Git branch Test</b>(It will create two file one to modify and test and one original file which will remain unaltered)</li>
+    <li>Now whatever code you want to extend in original write that code run and decide whether you want it in original or not</li>
+    <li>To switch from one branch to another type :<b>git checkout test</b>(it will get out of test and move to main file)</li>
+    <li>If you want to check which branch you are in type:<b>git branch</b><br>
+    for eg <b>main <br> * test</b> (this shows you are in test file)</li>
+    <li>Once decided if you want to keep the changes in original you can merge by command :<b>git merge test(type the command in main branch)</b></li>
+</ul>
+
+
 </div>
 </body>
 </html>
